@@ -14,6 +14,9 @@ cp -Rv . $SINGULARITY_ROOTFS/src/pydeface
 %post
 #########
 
+apt-get install -y python-setuptools
+
+
 cd /src/pydeface
 
 # checkout specific git release 
